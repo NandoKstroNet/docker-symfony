@@ -10,8 +10,8 @@ You have two options to build this image, the first one is pull from Docker Hub:
 
 	docker pull brunoric/docker-apache2-php-mariadb-symfony
 
-You can also clone `brunoric/docker-apache2-php-mariadb` from GitHub and build it yourself from the Dockerfile with the
-following command executed on the docker-apache2-php-mariadb folder:
+You can also clone `brunoric/docker-apache2-php-mariadb-symfony` from GitHub and build it yourself from the Dockerfile
+with the following command executed on the docker-apache2-php-mariadb-symfony folder:
 
 	docker build -t brunoric/docker-apache2-php-mariadb-symfony .
 
