@@ -1,5 +1,5 @@
-docker-apache2-php-mariadb
-==========================
+docker-apache2-php-mariadb-symfony
+==================================
 
 Docker image to PHP and MariaDB 10 (MySQL) Symfony standard projects.
 
@@ -11,7 +11,7 @@ You have two options to build this image, the first one is pull from Docker Hub:
 	docker pull brunoric/docker-apache2-php-mariadb-symfony
 
 You can also clone `brunoric/docker-apache2-php-mariadb-symfony` from GitHub and build it yourself from the Dockerfile
-with the following command executed on the docker-apache2-php-mariadb-symfony folder:
+with the following command executed on the `docker-apache2-php-mariadb-symfony` folder:
 
 	docker build -t brunoric/docker-apache2-php-mariadb-symfony .
 
@@ -43,9 +43,22 @@ system to the exposed ports of Apache2 and MariaDB 10 respectively.
 Important notes
 ---------------
 
-- Your application is accessible via `http://<CONTAINER_IP>` and your database
+- Your application is accessible via `http://<CONTAINER_IP>` and your database.
 `mysql -uadmin -pchange@this*passw0rd -h<CONTAINER_IP> -P3306`.
 - Don't forget to change your `admin` password with `mysqladmin -uadmin -pchange@this*passw0rd NEWPASSWORD`.
-- Docker documentation: [https://docs.docker.com][1]
+
+Docker images relationship
+--------------------------
+
+- `docker-apache2-php-mariadb-symfony` extends `docker-apache2-php-mariadb`.
+- `docker-apache2-php-mariadb` extends `docker-apache2-php`.
+- `docker-apache2-php` extends `ubuntu:trusty`
+
+Additional notes
+----------------
+
+- [Docker documentation][1].
+- [brunoric at Docker Hub][2].
 
 [1]: https://docs.docker.com
+[2]: https://registry.hub.docker.com/u/brunoric
