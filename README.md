@@ -54,6 +54,12 @@ Docker images relationship
 - `docker-apache2-php-mariadb` extends `docker-apache2-php`.
 - `docker-apache2-php` extends `ubuntu:trusty`
 
+TODO
+----
+
+- Use a better strategy to public folder.
+- Make app/console work out-of-the-box.
+
 Additional notes
 ----------------
 
